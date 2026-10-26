@@ -9,7 +9,7 @@ This repository contains the official, training-free evaluation code for our pap
 > **Paper Title:** From Edge to Gradient: Quantifying the Infiltrative Margin in Paediatric Diffuse Glioma
 > **Authors:** Jesús Ortiz-Perona, Jorge Reig-Calatayud, Luis Álvarez-Mira, and José Francisco Cánovas-Cerezo
 
-## 📌 Overview
+## Overview
 
 Automated segmentation of paediatric high-grade gliomas (DMG/DIPG) is challenging because these tumours present indistinct, infiltrative margins. This repository provides the codebase to reproduce our signal-level analysis, proving that the paediatric tumour margin should be modelled as a graded, uncertain transition rather than a crisp, high-frequency edge.
 
@@ -19,7 +19,7 @@ The analysis consists of:
 3. **Signed-Distance Transition Profiling:** Quantifying the multi-millimetre transition width of the infiltrative margin.
 4. **Qualitative Visualization:** 2D mapping of edge detection responses.
 
-## ⚙️ Installation & Requirements
+## Installation & Requirements
 
 The code is designed to run efficiently on a standard CPU. To run the experiments, install the required dependencies:
 
@@ -27,7 +27,7 @@ The code is designed to run efficiently on a standard CPU. To run the experiment
 pip install numpy pandas scipy scikit-learn nibabel matplotlib PyWavelets
 ```
 
-## 📂 Dataset Preparation
+## Dataset Preparation
 
 This code is built to run on the **BraTS-PEDs** dataset. Before running the notebook, ensure your data is organized as follows inside a `data/` directory:
 
@@ -45,7 +45,7 @@ data/
 ```
 *(Note: Only the T2-FLAIR and the segmentation masks are required for this specific analysis).*
 
-## 🚀 Usage
+## Usage
 
 The core experiments are unified into a single, highly readable Jupyter Notebook. 
 
@@ -61,7 +61,7 @@ The notebook relies on several custom Python scripts included in this repository
 * `distance_profile.py`: Core logic for the signed-distance intensity profiling.
 * `wavelet_vs_gradient_width.py`: Physical width estimation functions.
 
-## 📝 Citation
+## Citation
 
 If you find this code or our research helpful, please consider citing our work (official Springer proceedings will be available in December 2026):
 
